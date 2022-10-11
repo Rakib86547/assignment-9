@@ -1,0 +1,17 @@
+.active {
+    color: #61DAFB !important;
+}
+.menu {
+    flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        z-index: 900;
+        flex-direction: column;
+    }
+    .menu a{
+        margin-top: 30px;
+        padding: 10px 0;
+    }
+}

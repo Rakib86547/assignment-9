@@ -1,6 +1,9 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Topic = () => {
+    const quizs = useLoaderData().data
+    console.log(quizs)
     return (
         <div className='mt-8'>
             <h1 className='text-3xl font-semibold'>Welcome to Quiz Maker Session</h1>

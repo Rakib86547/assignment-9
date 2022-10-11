@@ -13,11 +13,12 @@ function App() {
     element: <Main></Main>,
     errorElement: <Error></Error>,
     children: [
-      {path: '/', element: <Topic></Topic>},
+      {path: '/',
+      loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+      element: <Topic></Topic>},
       {path: '/statics', element: <Statics></Statics>},
       {path: '/blog', element: <Blog></Blog>}
-    ]
-  }
+    ]}
   ]);
   return (
     <div className="App">

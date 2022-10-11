@@ -7,7 +7,7 @@ const TopicCard = ({quiz}) => {
         <div className='border rounded-md p-4'>
             <img className='w-[100%] h-[250px]' src={logo} alt="" />
             <p><strong>{name}</strong></p>
-            <Link to={`/${id}`}>
+            <Link to={`/quiz/${id}`}>
             <button className='btn btn-primary w-[100%]'>Start Quiz</button>
             </Link>
         </div>

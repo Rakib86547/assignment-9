@@ -17,7 +17,7 @@ const Quizs = () => {
     return (
         <div>
             <h1 className='text-3xl font-bold py-5 text-rose-600'>Quiz of {name}</h1>
-            <div className='w-[90%] m-auto'>
+            <div className='md:w-[40%] sm:w-[80%] w-[90%] m-auto'>
                 {
                     questions.map(qus => <QuizQuestion
                         key={qus.id}

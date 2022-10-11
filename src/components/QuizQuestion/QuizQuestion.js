@@ -15,23 +15,27 @@ const QuizQuestion = ({ qus, handleIcon }) => {
                 </div>
             </div>
             <div className='w-[50%] my-4 m-auto text-1xl'>
-                <div className='flex'>
-                    <input type="checkbox" />
+                <div className='flex py-3'>
+                    {/* <input type="checkbox" /> */}
+                    <input type="radio" name="radio-4" className="radio radio-accent" />
                     <h2 className='ml-3'>{options[0]}</h2>
                 </div>
 
-                <div className='flex '>
-                    <input type="checkbox" />
+                <div className='flex py-3'>
+                    {/* <input type="checkbox" /> */}
+                    <input type="radio" name="radio-4" className="radio radio-accent" />
                     <h2 className='ml-3 tex-2xl'>{options[1]}</h2>
                 </div>
 
-                <div className='flex'>
-                    <input type="checkbox" />
+                <div className='flex py-3'>
+                    {/* <input type="checkbox" /> */}
+                    <input type="radio" name="radio-4" className="radio radio-accent" />
                     <h2 className='ml-3 tex-2xl'>{options[2]}</h2>
                 </div>
 
-                <div className='flex'>
-                    <input type="checkbox" />
+                <div className='flex py-3'>
+                    {/* <input type="checkbox" /> */}
+                    <input type="radio" name="radio-4" className="radio radio-accent" />
                     <h2 className='ml-3 tex-2xl'>{options[3]}</h2>
                 </div>
             </div>

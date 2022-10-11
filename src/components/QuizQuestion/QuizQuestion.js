@@ -1,14 +1,17 @@
 import React from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
-const QuizQuestion = ({ qus }) => {
+
+const QuizQuestion = ({ qus, handleIcon }) => {
     console.log(qus);
     const { question, options } = qus;
+    
     return (
         <div className='border rounded-md border-orange-600 my-5'>
             <div className='flex w-[100%] justify-between px-4 items-center'>
                 <h1 className='text-3xl font-semibold text-rose-500'>quiz: {question}</h1>
                 <div>
-                    <EyeIcon className='w-6 h-6 cursor-pointer'></EyeIcon>
+                    <EyeIcon onClick={() => handleIcon(qus)} className='w-6 h-6 cursor-pointer'></EyeIcon>
+                    
                 </div>
             </div>
             <div className='w-[50%] my-4 m-auto text-1xl'>

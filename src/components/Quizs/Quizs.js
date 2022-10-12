@@ -9,10 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Quizs = () => {
     const quizData = useLoaderData().data;
     const { name, questions } = quizData;
-    // console.log(quizData)
     const handleIcon = (quizData) => {
-        // console.log(quizData)
-        // alert(quizData.correctAnswer)
         toast.success(quizData.correctAnswer);
     }
     return (

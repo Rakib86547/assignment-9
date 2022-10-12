@@ -1,7 +1,10 @@
 import { EyeIcon } from '@heroicons/react/24/solid'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const QuizQuestion = ({ qus, handleIcon }) => {
-    const { question, options } = qus;
-   
+    const { question, options, correctAnswer } = qus;
+  
     return (
         <div className='border rounded-md border-orange-600 my-5'>
             <div className='flex w-[100%] justify-between px-4 items-center'>
@@ -28,14 +31,24 @@ const QuizQuestion = ({ qus, handleIcon }) => {
 
                 </div>
 
-                <div  className='flex py-3'>
+                <div className='flex py-3'>
                     <input type="radio" name="radio-4" className="radio radio-accent" />
                     <h2 className='ml-3 tex-2xl'>{options[3]}</h2>
 
                 </div>
            
             </div>
-            
+            <ToastContainer
+            position="top-center"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light" />
         </div>
     );
 };

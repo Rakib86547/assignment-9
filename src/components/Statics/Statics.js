@@ -1,6 +1,7 @@
 import React from 'react';
-
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+
 
 const data = [
     {
@@ -32,10 +33,8 @@ const data = [
 
 const Statics = () => {
 
- 
     return (
         <div className='flex justify-center items-center md:w-[100%] mt-8'>
-           
             <LineChart width={300} height={350} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
@@ -44,10 +43,11 @@ const Statics = () => {
                 <Legend />
                 <Line type="monotone" dataKey="total" stroke="#8884d8" />
             </LineChart>
-            
+          
         </div>
 
     );
 };
+
 
 export default Statics;
